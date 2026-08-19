@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: renzocandano/sc-pf-shipping-website
   branch: main
 
 publish_mode: simple
@@ -15,13 +16,16 @@ collections:
         label: "Routes & Schedule"
         file: "data/schedule.json"
         fields:
-          - { name: "routes", label: "Routes", widget: "list", summary: "{{route}}", fields:
-              - { name: "route", label: "Route (e.g. Port A ↔ Port B)", widget: "string" }
+          - name: "routes"
+            label: "Routes"
+            widget: "list"
+            summary: "{{route}}"
+            fields:
+              - { name: "route", label: "Route (e.g. Port A to Port B)", widget: "string" }
               - { name: "strait", label: "Strait / Body of Water", widget: "string", required: false }
               - { name: "vessels", label: "Vessels on this Route", widget: "string" }
               - { name: "days", label: "Days", widget: "string" }
               - { name: "departures", label: "Departure Times / Notes", widget: "text" }
-            }
 
   - name: "contact"
     label: "Contact Us"
