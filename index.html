@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Santa Clara &amp; Penafrancia Shipping | Schedule</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="mockup-banner">MOCKUP / DRAFT — for stakeholder review only. Some content is still pending confirmation.</div>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <div class="brand">
+      <img src="images/logos/santaclara.jpeg" alt="Santa Clara Shipping Corp. logo">
+      <img src="images/logos/penafrancia.jpeg" alt="Penafrancia Shipping Corp. logo">
+      <div class="brand-text">
+        <strong>Santa Clara Shipping Corp.</strong>
+        <strong>Penafrancia Shipping Corp.</strong>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="active">Schedule</a></li>
+        <li><a href="book.html">Book Your Trip</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="fleet.html">Meet Our Fleet</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <p>Santa Clara and Penafrancia Shipping — sister RORO companies operating as one fleet, carrying passengers and cargo across the Philippines since 1996.</p>
+  </div>
+</section>
+
+<section id="schedule">
+  <div class="container">
+    <h2 class="section-title">Routes &amp; Schedule</h2>
+    <p class="section-sub">Our current sailing routes and departure times. Some routes run on a fixed daily schedule; others depend on passenger and cargo volume — see notes per route below.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Route</th><th>Vessels</th><th>Days</th><th>Departure Times <span style="font-weight:400;font-size:.8em;">(for accurate schedules, contact the port of departure <a href="contact.html#ports">here</a>)</span></th></tr>
+        </thead>
+        <tbody id="schedule-body"></tbody>
+      </table>
+    </div>
+
+    <div class="note-box warn">
+      Ferries typically wait until near full capacity before departing — up to about 4 hours during off-peak season and up to about 1 hour during peak season. For accurate schedules, call the customer support of your port of departure <a href="contact.html#ports">here</a>.
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <h2 class="section-title">Suggest a New Route</h2>
+    <p class="section-sub">Traveling somewhere we don't currently serve? Let us know — we review route suggestions regularly.</p>
+    <form class="form-box" id="route-suggestion-form">
+      <label for="rs-name">Your Name</label>
+      <input type="text" id="rs-name" placeholder="Juan Dela Cruz" required>
+      <label for="rs-email">Email</label>
+      <input type="email" id="rs-email" placeholder="you@email.com" required>
+      <label for="rs-route">Suggested Route</label>
+      <input type="text" id="rs-route" placeholder="e.g. Bulan to Masbate" required>
+      <label for="rs-notes">Why this route? (optional)</label>
+      <textarea id="rs-notes" placeholder="Tell us a bit about the demand you see..."></textarea>
+      <div style="margin-top:16px;"><button type="submit" class="btn">Submit Suggestion</button></div>
+    </form>
+    <div class="note-box" id="route-suggestion-confirm" style="display:none;max-width:560px;">
+      Thank you! Your route suggestion has been noted. <em>(Mockup only — no data is actually sent yet.)</em>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <h4>Santa Clara &amp; Penafrancia Shipping</h4>
+        <p>No. 1002 Maharlika Highway, Brgy. New San Roque, Pili, Camarines Sur 4418, Philippines</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Schedule</a></li>
+          <li><a href="book.html">Book Your Trip</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/santaclarashippingcorporation" target="_blank" rel="noopener">Santa Clara on Facebook</a></li>
+          <li><a href="https://www.facebook.com/penafranciashippingcorporation" target="_blank" rel="noopener">Penafrancia on Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">Mockup site — not for public use. &copy; 2026 Santa Clara Shipping Corp. &amp; Penafrancia Shipping Corp.</div>
+  </div>
+</footer>
+
+<script src="js/schedule.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
