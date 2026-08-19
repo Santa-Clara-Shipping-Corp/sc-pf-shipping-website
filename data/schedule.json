@@ -1,0 +1,46 @@
+{
+  "routes": [
+    {
+      "route": "Pio Duran, Albay ↔ Masbate City",
+      "strait": "Ticao Pass",
+      "vessels": "M/V Almirante Federico, M/V Don Eduardo",
+      "days": "Daily",
+      "departures": "Pio Duran: 7:00 AM & 7:00 PM · Masbate City: 1:00 PM & 4:00 PM (schedule may shift depending on truck/bus/passenger volume)"
+    },
+    {
+      "route": "Matnog, Sorsogon ↔ Jubasan, Allen (Northern Samar)",
+      "strait": "San Bernardino Strait",
+      "vessels": "M/V Jack Daniel, M/V King Frederick, M/V Nelvin Jules, M/V Anthon Raphael, M/V Renzo Louie",
+      "days": "Daily, 24/7",
+      "departures": "No fixed schedule — 4–5 vessels run continuously, roughly every 2–3 hours"
+    },
+    {
+      "route": "Tabaco City ↔ Virac, Catanduanes",
+      "strait": "Lagonoy Gulf",
+      "vessels": "M/V Dawn Antonio",
+      "days": "Daily",
+      "departures": "Tabaco City: 6:30 AM · Virac: 6:30 PM"
+    },
+    {
+      "route": "Hilongos, Leyte ↔ Ubay, Bohol",
+      "strait": "Camotes Sea",
+      "vessels": "M/V Hansel Jobett (Penafrancia route — a Santa Clara vessel covers during Penafrancia's drydocking, roughly every 2 years)",
+      "days": "Daily",
+      "departures": "Hilongos: 8:00 AM · Ubay: 1:00 PM"
+    },
+    {
+      "route": "Palompon, Leyte ↔ Matnog, Sorsogon",
+      "strait": "Visayan Sea",
+      "vessels": "M/V Steve Albert, M/V Lance Daniel (+2 more vessels per source records — names not on file)",
+      "days": "Daily",
+      "departures": "Daily trip both directions (schedule may shift depending on volume)"
+    },
+    {
+      "route": "Maasin, Leyte ↔ Lipata, Surigao",
+      "strait": "Surigao Strait",
+      "vessels": "M/V Fritz Elson",
+      "days": "Daily",
+      "departures": "Daily trip both directions (schedule may shift depending on volume)"
+    }
+  ]
+}

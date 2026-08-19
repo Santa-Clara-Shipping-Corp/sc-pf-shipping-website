@@ -1,0 +1,26 @@
+{
+  "mainOffice": {
+    "companyNames": "Santa Clara Shipping Corporation / Penafrancia Shipping Corporation",
+    "address": "No. 1002 Maharlika Highway, Brgy. New San Roque, Pili, Camarines Sur 4418",
+    "landline": "(054) 871-6287",
+    "globe": "(+63)917-580-3935",
+    "smart": "(+63)998-861-6498",
+    "viberCargo": "(+63)917-580-3935",
+    "emailSantaClara": "santaclaracorp@yahoo.com",
+    "emailPenafrancia": "penafranciashipcorp@gmail.com"
+  },
+  "ports": [
+    { "name": "Jubasan Port", "phone": "(+63)917-580-1824" },
+    { "name": "Matnog Port", "phone": "(+63)917-580-1823" },
+    { "name": "Liloan Port", "phone": "" },
+    { "name": "Lipata Port", "phone": "(+63)950-866-5734" },
+    { "name": "Pioduran Port", "phone": "(+63)917-528-2028" },
+    { "name": "Masbate Port", "phone": "(+63)917-557-5545" },
+    { "name": "Tabaco Port", "phone": "(+63)917-580-2356" },
+    { "name": "Virac Port", "phone": "(+63)930-481-5943" },
+    { "name": "Hilongos Port", "phone": "(+63)917-164-9569" },
+    { "name": "Ubay Port", "phone": "(+63)906-192-4420" },
+    { "name": "Maasin Port", "phone": "(+63)917-164-9536" },
+    { "name": "Palompon Port", "phone": "(+63)917-308-3714" }
+  ]
+}

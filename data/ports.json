@@ -1,0 +1,88 @@
+{
+  "ports": [
+    {
+      "name": "Jubasan Port (Company-owned)",
+      "image": "images/ports/jubasan.jpeg",
+      "location": "Allen, Northern Samar",
+      "address": "Allen, Northern Samar",
+      "mapsUrl": "https://www.google.com/maps/place/Santa+Clara+Shipping/@12.4821046,124.2546357,13.75z"
+    },
+    {
+      "name": "Matnog Port",
+      "image": "images/ports/matnog.jpeg",
+      "location": "Matnog, Sorsogon",
+      "address": "Matnog, Sorsogon",
+      "mapsUrl": "https://www.google.com/maps/place/Port+of+Matnog/@12.5842182,124.0834905,17z"
+    },
+    {
+      "name": "Liloan Port",
+      "image": "images/ports/liloan.jpeg",
+      "location": "Southern Leyte",
+      "address": "Southern Leyte",
+      "mapsUrl": "https://www.google.com/maps/place/Liloan+Ferry+Terminal/@10.1592006,125.1224122,17z"
+    },
+    {
+      "name": "Lipata Port",
+      "image": "images/ports/lipata.jpeg",
+      "location": "Surigao",
+      "address": "Surigao",
+      "mapsUrl": "https://www.google.com/maps/place/Lipata+Ferry+Terminal/@9.8153874,125.4521474,17z"
+    },
+    {
+      "name": "Pioduran Port",
+      "image": "images/ports/pioduran.jpeg",
+      "location": "Pioduran, Albay",
+      "address": "Pioduran, Albay",
+      "mapsUrl": "https://www.google.com/maps/place/Pio+Duran+Municipal+Port/@13.0286753,123.4432368,19.75z"
+    },
+    {
+      "name": "Masbate Port",
+      "image": "images/ports/masbate.jpeg",
+      "location": "Masbate",
+      "address": "Masbate City, Masbate",
+      "mapsUrl": "https://www.google.com/maps/place/Masbate+Port,+Masbate+City,+Masbate/@12.3692335,123.6139741,18z"
+    },
+    {
+      "name": "Tabaco Port",
+      "image": "images/ports/tabaco.png",
+      "location": "Tabaco",
+      "address": "Tabaco City, Albay",
+      "mapsUrl": "https://www.google.com/maps/place/Tabaco+Port,+Tabaco+City,+Albay/@13.3614715,123.7355697,18z"
+    },
+    {
+      "name": "Virac Port",
+      "image": "images/ports/virac.png",
+      "location": "Catanduanes",
+      "address": "Catanduanes",
+      "mapsUrl": "https://www.google.com/maps/place/Virac+Port/@13.5817152,124.2310462,17z"
+    },
+    {
+      "name": "Hilongos Port",
+      "image": "images/ports/hilongos.jpeg",
+      "location": "Leyte",
+      "address": "Hilongos, Leyte",
+      "mapsUrl": "https://www.google.com/maps/place/Port+of+Hilongos/@10.3690903,124.7368169,17z"
+    },
+    {
+      "name": "Ubay Port",
+      "image": "images/ports/ubay.jpeg",
+      "location": "Bohol",
+      "address": "Ubay, Bohol",
+      "mapsUrl": "https://www.google.com/maps/place/Port+of+Ubay/@10.0618864,124.4705105,17z"
+    },
+    {
+      "name": "Maasin Port",
+      "image": "images/ports/maasin-real.png",
+      "location": "Leyte",
+      "address": "Maasin, Leyte",
+      "mapsUrl": "https://www.google.com/maps/place/Port+of+Maasin/@10.1304546,124.8389482,17z"
+    },
+    {
+      "name": "Palompon Port",
+      "image": "images/ports/palompon-real.jpg",
+      "location": "Leyte",
+      "address": "Palompon, Leyte",
+      "mapsUrl": ""
+    }
+  ]
+}

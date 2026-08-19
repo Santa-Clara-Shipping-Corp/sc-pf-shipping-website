@@ -1,0 +1,96 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: simple
+
+media_folder: "images/uploads"
+public_folder: "images/uploads"
+
+collections:
+  - name: "schedule"
+    label: "Routes & Schedule"
+    files:
+      - name: "schedule"
+        label: "Routes & Schedule"
+        file: "data/schedule.json"
+        fields:
+          - { name: "routes", label: "Routes", widget: "list", summary: "{{route}}", fields:
+              - { name: "route", label: "Route (e.g. Port A ↔ Port B)", widget: "string" }
+              - { name: "strait", label: "Strait / Body of Water", widget: "string", required: false }
+              - { name: "vessels", label: "Vessels on this Route", widget: "string" }
+              - { name: "days", label: "Days", widget: "string" }
+              - { name: "departures", label: "Departure Times / Notes", widget: "text" }
+            }
+
+  - name: "contact"
+    label: "Contact Us"
+    files:
+      - name: "contact"
+        label: "Contact Info"
+        file: "data/contact.json"
+        fields:
+          - name: "mainOffice"
+            label: "Main Office"
+            widget: "object"
+            fields:
+              - { name: "companyNames", label: "Company Names", widget: "string" }
+              - { name: "address", label: "Address", widget: "string" }
+              - { name: "landline", label: "Landline", widget: "string" }
+              - { name: "globe", label: "Globe Number", widget: "string" }
+              - { name: "smart", label: "Smart Number", widget: "string" }
+              - { name: "viberCargo", label: "Viber (Cargo Bookings)", widget: "string" }
+              - { name: "emailSantaClara", label: "Email (Santa Clara)", widget: "string" }
+              - { name: "emailPenafrancia", label: "Email (Penafrancia)", widget: "string" }
+          - name: "ports"
+            label: "Port Contact Numbers"
+            widget: "list"
+            summary: "{{name}}"
+            fields:
+              - { name: "name", label: "Port Name", widget: "string" }
+              - { name: "phone", label: "Contact Number", widget: "string", required: false, hint: "Leave blank if unavailable — site will show N/A" }
+
+  - name: "vessels"
+    label: "Fleet — Vessels"
+    files:
+      - name: "vessels"
+        label: "Vessels"
+        file: "data/vessels.json"
+        fields:
+          - name: "scsc"
+            label: "Santa Clara Shipping Corporation (SCSC)"
+            widget: "list"
+            summary: "{{name}}"
+            fields: &vesselFields
+              - { name: "name", label: "Vessel Name", widget: "string" }
+              - { name: "image", label: "Photo", widget: "image" }
+              - { name: "yearBuilt", label: "Year Built", widget: "string", required: false, hint: "Use N/A if unknown" }
+              - { name: "countryBuilt", label: "Country Built", widget: "string", required: false, hint: "Use N/A if unknown" }
+              - { name: "yearStarted", label: "Year Operations Started", widget: "string", required: false, hint: "Use N/A if unknown" }
+              - { name: "netTonnage", label: "Net Tonnage", widget: "string", required: false, hint: "Use N/A if unknown" }
+              - { name: "type", label: "Ship Type", widget: "string", required: false, hint: "Use N/A if unknown" }
+              - { name: "passengers", label: "Passenger Capacity", widget: "string", required: false, hint: "Use N/A if unknown" }
+              - { name: "vehicles", label: "Vehicle Capacity (Trucks/Buses)", widget: "string", required: false, hint: "Use N/A if unknown" }
+          - name: "psc"
+            label: "Penafrancia Shipping Corporation (PSC)"
+            widget: "list"
+            summary: "{{name}}"
+            fields: *vesselFields
+
+  - name: "ports"
+    label: "Fleet — Ports of Operation"
+    files:
+      - name: "ports"
+        label: "Ports of Operation"
+        file: "data/ports.json"
+        fields:
+          - name: "ports"
+            label: "Ports"
+            widget: "list"
+            summary: "{{name}}"
+            fields:
+              - { name: "name", label: "Port Name", widget: "string" }
+              - { name: "image", label: "Photo", widget: "image" }
+              - { name: "location", label: "Location (shown on card)", widget: "string" }
+              - { name: "address", label: "Full Address", widget: "string", required: false, hint: "Use N/A if unknown" }
+              - { name: "mapsUrl", label: "Google Maps Link", widget: "string", required: false, hint: "Leave blank if unavailable — site will show N/A" }
