@@ -98,3 +98,90 @@ collections:
               - { name: "location", label: "Location (shown on card)", widget: "string" }
               - { name: "address", label: "Full Address", widget: "string", required: false, hint: "Use N/A if unknown" }
               - { name: "mapsUrl", label: "Google Maps Link", widget: "string", required: false, hint: "Leave blank if unavailable — site will show N/A" }
+
+  - name: "about"
+    label: "About Us"
+    files:
+      - name: "about"
+        label: "About Us"
+        file: "data/about.json"
+        fields:
+          - { name: "intro", label: "Intro Paragraph", widget: "text" }
+          - { name: "santaClaraDesc", label: "Santa Clara Shipping — Description", widget: "text" }
+          - { name: "penafranciaDesc", label: "Penafrancia Shipping — Description", widget: "text" }
+          - { name: "historyNote", label: "History Section Note", widget: "text" }
+          - name: "timeline"
+            label: "History Timeline"
+            widget: "list"
+            summary: "{{year}} — {{title}}"
+            fields:
+              - { name: "year", label: "Year", widget: "string" }
+              - { name: "title", label: "Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "text" }
+
+  - name: "faq"
+    label: "FAQs"
+    files:
+      - name: "faq"
+        label: "FAQs"
+        file: "data/faq.json"
+        fields:
+          - name: "items"
+            label: "Questions"
+            widget: "list"
+            summary: "{{question}}"
+            fields:
+              - { name: "question", label: "Question", widget: "string" }
+              - { name: "answer", label: "Answer", widget: "text", hint: "You can use HTML, e.g. <a href=\"contact.html\">Contact Us</a>" }
+              - { name: "open", label: "Open by default", widget: "boolean", default: false }
+
+  - name: "careers"
+    label: "Careers"
+    files:
+      - name: "careers"
+        label: "Careers"
+        file: "data/careers.json"
+        fields:
+          - { name: "apprenticeshipIntro", label: "Apprenticeship Program Intro", widget: "text" }
+          - name: "apprenticeshipTable"
+            label: "Apprenticeship Program Details"
+            widget: "list"
+            summary: "{{label}}"
+            fields:
+              - { name: "label", label: "Label", widget: "string" }
+              - { name: "description", label: "Description", widget: "text" }
+          - { name: "requirementsText", label: "Application Requirements", widget: "text" }
+          - { name: "howToApply", label: "How to Apply", widget: "text", hint: "You can use HTML, e.g. <a href=\"mailto:...\">email</a>" }
+          - { name: "openRolesNote", label: "Open Roles — Fallback Note (shown when no roles listed)", widget: "text" }
+          - name: "openRoles"
+            label: "Open Roles"
+            widget: "list"
+            summary: "{{title}}"
+            required: false
+            fields:
+              - { name: "title", label: "Role Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "text" }
+
+  - name: "book"
+    label: "Book Your Trip"
+    files:
+      - name: "book"
+        label: "Book Your Trip"
+        file: "data/book.json"
+        fields:
+          - { name: "passengerIntro", label: "Passenger Booking Intro", widget: "text" }
+          - name: "passengerSteps"
+            label: "Passenger Booking Steps"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { name: "title", label: "Step Title", widget: "string" }
+              - { name: "description", label: "Step Description", widget: "text", hint: "You can use HTML links" }
+          - { name: "cargoIntro", label: "Cargo Booking Intro", widget: "text" }
+          - name: "cargoSteps"
+            label: "Cargo Booking Steps"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { name: "title", label: "Step Title", widget: "string" }
+              - { name: "description", label: "Step Description", widget: "text", hint: "You can use HTML links" }

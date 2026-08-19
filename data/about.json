@@ -1,0 +1,15 @@
+{
+  "intro": "Santa Clara Shipping Corporation and Penafrancia Shipping Corporation are separately incorporated sister companies under common ownership and management, based in Bicol. In practice they operate as a single fleet — sharing crews, schedules, ports, and terminals — a common structure among Philippine domestic shipping operators that keeps operations resilient and consistent for passengers and shippers alike.",
+  "santaClaraDesc": "A domestic shipping corporation duly organized under the laws of the Philippines, established in 1996.",
+  "penafranciaDesc": "Established 2006, Penafrancia Shipping Corporation shares Santa Clara's routes, ports, and management team, and operates several vessels that trace their roots to an earlier fleet acquisition in the Bicol region.",
+  "historyNote": "Compiled from company records and a 2019 feature by the Philippine Ship Spotters Society. Dates should be verified with company records before publishing.",
+  "timeline": [
+    { "year": "1996", "title": "Santa Clara Shipping Corporation is founded", "description": "Established in Pili, Camarines Sur, amid demand from travelers and shippers across the San Bernardino Strait for better, more reliable ferry service after several incumbent operators declined or exited the route." },
+    { "year": "1999", "title": "First two vessels take to sea", "description": "M/V King Frederick and M/V Nelvin Jules begin sailing the Matnog–Allen crossing, offering newer, faster, better-appointed service than the aging competition." },
+    { "year": "2004", "title": "Fleet grows with M/V Hansel Jobett", "description": "A third vessel joins the Matnog–Allen route as demand continues to grow." },
+    { "year": "2006", "title": "Penafrancia Shipping's fleet lineage begins", "description": "Following an amicable settlement with a competing operator, a fleet of vessels (later renamed M/V Eugene Elson, M/V Don Benito Ambrosio II, and M/V Don Herculano) is transferred into what becomes Penafrancia Shipping Corporation, expanding the group's presence on the Tabaco–Virac route." },
+    { "year": "2007–2017", "title": "Fleet modernization and expansion", "description": "Additional vessels join the combined fleet — including M/V Mac Bryan, M/V Anthon Raphael, M/V Nathan Matthew, M/V Jack Daniel, M/V Adrian Jude, and M/V Almirante Federico — alongside the construction of Jubasan Port in Allen, Northern Samar, the group's first privately-owned port." },
+    { "year": "2017–2018", "title": "Entry into cargo RORO service", "description": "LCT Aldain Dowey and LCT ST 888 join the fleet, giving trucks and cargo their own dedicated vessels separate from passenger sailings." },
+    { "year": "2022–2023", "title": "Continued growth", "description": "The Hilongos, Leyte route opens in 2022, and the newly-built M/V General Santos joins the fleet in 2023, reflecting continued investment in the Visayas and Mindanao network." }
+  ]
+}

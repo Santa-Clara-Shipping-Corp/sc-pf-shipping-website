@@ -1,0 +1,14 @@
+{
+  "passengerIntro": "Most passengers travel on a walk-in basis, though advance booking is available directly at our terminals.",
+  "passengerSteps": [
+    { "title": "Head to the terminal", "description": "Arrive at the port for your route (see our <a href=\"fleet.html#ports\">list of ports</a>). Walk-in booking is available and is how most passengers travel with us." },
+    { "title": "Prefer to book ahead?", "description": "Currently, advanced passenger bookings can only be done through <a href=\"https://12go.asia/en\" target=\"_blank\" rel=\"noopener\">12GO</a> (extra fees may apply). Coming soon: We're partnering with Mercury Transport so you can book and pay online!" }
+  ],
+  "cargoIntro": "Trucks and cargo shipments follow a separate, advance-payment process.",
+  "cargoSteps": [
+    { "title": "Message our Cargo Viber Group", "description": "Send a message to our official <a href=\"contact.html\">cargo booking Viber group</a> to arrange your shipment." },
+    { "title": "Send advance payment", "description": "Pay via InstaPay or QR PH to secure your booking." },
+    { "title": "Book your ferry slot", "description": "Once payment is confirmed, coordinate with our staff in the Viber group and we'll reserve your slot on the next available cargo sailing, or on your preferred date." },
+    { "title": "Drop off &amp; timing", "description": "Coordinate drop-off at the shipyard/terminal with our staff in the Viber group ahead of the scheduled departure." }
+  ]
+}
