@@ -243,3 +243,6 @@ footer ul li{margin-bottom:6px;}
   display:flex;align-items:center;justify-content:center;color:var(--navy);
 }
 .vessel-modal-close:hover{background:#fff;}
+
+.photo-modal{max-width:560px;padding:0;}
+.photo-modal img{display:block;width:100%;height:auto;}
