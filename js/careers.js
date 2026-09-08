@@ -13,15 +13,23 @@ async function renderCareers() {
     document.getElementById("requirements-text").textContent = data.requirementsText;
     document.getElementById("how-to-apply").innerHTML = data.howToApply;
 
-    const openRolesEl = document.getElementById("open-roles");
-    if (data.openRoles && data.openRoles.length > 0) {
-      openRolesEl.innerHTML = data.openRoles.map(role => `
-        <div class="note-box" style="margin-bottom:12px;">
-          <strong>${role.title}</strong><br>${role.description}
-        </div>
-      `).join("");
-    } else {
-      openRolesEl.innerHTML = `<div class="note-box">${data.openRolesNote}</div>`;
+    const openRolesIntroEl = document.getElementById("open-roles-intro");
+    if (openRolesIntroEl) openRolesIntroEl.innerHTML = data.openRolesIntro || "";
+
+    const openRolesGrid = document.getElementById("open-roles-grid");
+    if (openRolesGrid) {
+      if (data.openRoles && data.openRoles.length > 0) {
+        openRolesGrid.innerHTML = data.openRoles.map(role => `
+          <div class="card vessel-card">
+            <img class="card-img" src="${role.image}" alt="${role.title}">
+            <div class="card-body">
+              <h3>${role.title}</h3>
+            </div>
+          </div>
+        `).join("");
+      } else {
+        openRolesGrid.innerHTML = `<div class="note-box">No open roles at the moment. In the meantime, you can reach out via email or through our <a href="contact.html">contact form</a> to inquire.</div>`;
+      }
     }
   } catch (e) {
     console.error("Failed to load careers content", e);
