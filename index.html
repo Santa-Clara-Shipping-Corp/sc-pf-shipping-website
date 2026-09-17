@@ -80,11 +80,12 @@
       <input type="text" id="rs-route" placeholder="e.g. Bulan to Masbate" required>
       <label for="rs-notes">Why this route? (optional)</label>
       <textarea id="rs-notes" placeholder="Tell us a bit about the demand you see..."></textarea>
-      <div style="margin-top:16px;"><button type="submit" class="btn">Submit Suggestion</button></div>
+      <div style="margin-top:16px;"><button type="submit" class="btn" id="route-suggestion-submit-btn">Submit Suggestion</button></div>
     </form>
     <div class="note-box" id="route-suggestion-confirm" style="display:none;max-width:560px;">
-      Thank you! Your route suggestion has been noted. <em>(Mockup only — no data is actually sent yet.)</em>
+      Thank you! Your route suggestion has been sent to our team.
     </div>
+    <div class="note-box warn" id="route-suggestion-error" style="display:none;max-width:560px;"></div>
   </div>
 </section>
 
