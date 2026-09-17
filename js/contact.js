@@ -40,3 +40,49 @@ async function renderContact() {
 }
 
 document.addEventListener("DOMContentLoaded", renderContact);
+
+// Contact form — sends via the send-inquiry Netlify Function, routed by
+// selected subject to the right inbox (see netlify/functions/send-inquiry.js).
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contact-form");
+  if (!form) return;
+
+  const submitBtn = document.getElementById("contact-submit-btn");
+  const confirmBox = document.getElementById("contact-confirm");
+  const errorBox = document.getElementById("contact-error");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    if (errorBox) errorBox.style.display = "none";
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending...";
+
+    const payload = {
+      type: "contact",
+      name: document.getElementById("c-name").value,
+      email: document.getElementById("c-email").value,
+      subject: document.getElementById("c-subject").value,
+      message: document.getElementById("c-message").value,
+    };
+
+    try {
+      const res = await fetch("/.netlify/functions/send-inquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) throw new Error("Send failed");
+
+      form.style.display = "none";
+      if (confirmBox) confirmBox.style.display = "block";
+    } catch (err) {
+      console.error("Contact form submission failed:", err);
+      if (errorBox) {
+        errorBox.textContent = "Sorry, something went wrong sending your message. Please reach us directly using the details above.";
+        errorBox.style.display = "block";
+      }
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Send Message";
+    }
+  });
+});
