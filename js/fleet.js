@@ -91,8 +91,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       ? `<a href="${p.mapsUrl}" target="_blank" rel="noopener">View on Google Maps</a>`
       : "N/A";
     modalSpecs.innerHTML = [
-      `<li><span>Address</span><strong>${p.address && p.address.trim() ? p.address : "N/A"}</strong></li>`,
-      `<li><span>Google Maps</span><strong>${mapsLink}</strong></li>`,
+      `<li><span>Port Address</span><strong>${p.portAddress && p.portAddress.trim() ? p.portAddress : "N/A"}</strong></li>`,
+      `<li><span>Ticketing Address</span><strong>${p.ticketingAddress && p.ticketingAddress.trim() ? p.ticketingAddress : "N/A"}</strong></li>`,
+      `<li><span>Google Maps - Port</span><strong>${mapsLink}</strong></li>`,
     ].join("");
   }
 
