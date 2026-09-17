@@ -75,22 +75,26 @@
 
     <div class="form-box">
       <h3 style="color:var(--navy);margin-top:0;">Send Us a Message</h3>
-      <label for="c-name">Name</label>
-      <input type="text" id="c-name" placeholder="Your full name">
-      <label for="c-email">Email</label>
-      <input type="email" id="c-email" placeholder="you@email.com">
-      <label for="c-subject">Subject</label>
-      <select id="c-subject">
-        <option>General Inquiry</option>
-        <option>Booking Question</option>
-        <option>Cargo Shipment</option>
-        <option>Complaint</option>
-        <option>Employment matters</option>
-        <option>Other</option>
-      </select>
-      <label for="c-message">Message</label>
-      <textarea id="c-message" placeholder="How can we help?"></textarea>
-      <div style="margin-top:16px;"><button type="button" class="btn">Send Message <em style="font-weight:400;font-size:.75em;">(mockup only)</em></button></div>
+      <form id="contact-form">
+        <label for="c-name">Name</label>
+        <input type="text" id="c-name" placeholder="Your full name" required>
+        <label for="c-email">Email</label>
+        <input type="email" id="c-email" placeholder="you@email.com" required>
+        <label for="c-subject">Subject</label>
+        <select id="c-subject">
+          <option value="general">General Inquiry</option>
+          <option value="booking">Booking Question</option>
+          <option value="cargo">Cargo Shipment</option>
+          <option value="complaint">Complaint</option>
+          <option value="employment">Employment matters</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="c-message">Message</label>
+        <textarea id="c-message" placeholder="How can we help?" required></textarea>
+        <div style="margin-top:16px;"><button type="submit" class="btn" id="contact-submit-btn">Send Message</button></div>
+      </form>
+      <div class="note-box" id="contact-confirm" style="display:none;">Thank you! Your message has been sent. We'll get back to you soon.</div>
+      <div class="note-box warn" id="contact-error" style="display:none;"></div>
     </div>
   </div>
 </section>
