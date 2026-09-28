@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: renzocandano/sc-pf-shipping-website
+  repo: Santa-Clara-Shipping-Corp/sc-pf-shipping-website
   branch: main
 
 publish_mode: simple
