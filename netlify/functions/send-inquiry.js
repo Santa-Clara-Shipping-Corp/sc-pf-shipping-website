@@ -5,13 +5,13 @@
 // below, not just the Resend account owner's own address.
 
 const RECIPIENTS = {
-  "route-suggestion": "penafranciashipcorp@gmail.com",
-  "general": "penafranciashipcorp@gmail.com",
+  "route-suggestion": "santapenafrancia@gmail.com",
+  "general": "santapenafrancia@gmail.com",
   "booking": "pscsc.collections@gmail.com",
-  "cargo": "pscsc.collections@gmail.com",
+  "cargo": "santapenafrancia@gmail.com",
   "complaint": "hrscpsc.corporation@yahoo.com.ph",
   "employment": "pscsc.recruitment@yahoo.com",
-  "other": "penafranciashipcorp@gmail.com",
+  "other": "santapenafrancia@gmail.com",
 };
 
 const FROM_ADDRESS = "Santa Clara & Penafrancia Shipping Website <inquiries@santaclarashippingcorp.com>";
