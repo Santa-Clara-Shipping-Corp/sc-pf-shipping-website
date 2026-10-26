@@ -27,18 +27,6 @@
   "openRolesIntro": "Below are roles that we are currently hiring for. To apply, scan the QR code which will lead you to a form.",
   "openRoles": [
     {
-      "title": "Seamen",
-      "image": "images/uploads/role-seamen.jpg"
-    },
-    {
-      "title": "Accounting Assistant",
-      "image": "images/uploads/role-accounting-assistant.jpg"
-    },
-    {
-      "title": "Warehouse Clerk",
-      "image": "images/uploads/role-warehouse-clerk.jpg"
-    },
-    {
       "title": "Dockmaster, Crane Operator, Backhoe Operator, Forklift Operator, Sandblaster, Carpenter",
       "image": "images/uploads/hr_10.26.2026.jpg"
     }
