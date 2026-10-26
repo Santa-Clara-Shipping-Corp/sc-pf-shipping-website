@@ -26,8 +26,21 @@
   "howToApply": "<strong>How to apply:</strong> Scan all requirements into one PDF named SURNAME, GIVEN NAME, MIDDLE INITIAL, then email to <a href=\"mailto:pscsc.recruitment@yahoo.com\">pscsc.recruitment@yahoo.com</a>. You may also apply in person at the Head Office (Maharlika Highway, New San Roque, Pili, Camarines Sur, inside Partido Rice Mill). An apprenticeship fund of PHP 10,000 applies, covering PPE, dental, and insurance. For inquiries, call (+63)997-387-0769 or message \"HR Gellie\" on Facebook Messenger.",
   "openRolesIntro": "Below are roles that we are currently hiring for. To apply, scan the QR code which will lead you to a form.",
   "openRoles": [
-    { "title": "Seamen", "image": "images/uploads/role-seamen.jpg" },
-    { "title": "Accounting Assistant", "image": "images/uploads/role-accounting-assistant.jpg" },
-    { "title": "Warehouse Clerk", "image": "images/uploads/role-warehouse-clerk.jpg" }
+    {
+      "title": "Seamen",
+      "image": "images/uploads/role-seamen.jpg"
+    },
+    {
+      "title": "Accounting Assistant",
+      "image": "images/uploads/role-accounting-assistant.jpg"
+    },
+    {
+      "title": "Warehouse Clerk",
+      "image": "images/uploads/role-warehouse-clerk.jpg"
+    },
+    {
+      "title": "Dockmaster, Crane Operator, Backhoe Operator, Forklift Operator, Sandblaster, Carpenter",
+      "image": "images/uploads/hr_10.26.2026.jpg"
+    }
   ]
 }
